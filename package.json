@@ -1,0 +1,20 @@
+{
+  "name": "eloko",
+  "version": "1.0.0",
+  "description": "Congolese forest dwarf spirits with grass clothing and bells",
+  "category": "ENTITY_SPIRIT",
+  "keywords": [
+    "eloko",
+    "biloko",
+    "Congo",
+    "forest spirits",
+    "dwarf creatures",
+    "African folklore",
+    "Central African mythology"
+  ],
+  "culturalOrigin": "Various",
+  "relatedPhenomena": [],
+  "lastUpdated": "2026-01-14",
+  "type": "Forest Spirit",
+  "symbolism": "Forest Protection, Danger"
+}
