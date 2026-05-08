@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/eloko",
     "maintainers": [
       {
@@ -16,112 +16,233 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "eloko",
-    "name": "Eloko (Biloko)",
-    "aliases": [],
+    "name": "Eloko",
+    "aliases": [
+      { "name": "Biloko", "language": "Mongo-Nkundo (Bantu)", "region": "Democratic Republic of the Congo", "meaning": "Plural form of 'eloko'" }
+    ],
     "category": "ENTITY_SPIRIT",
-    "subcategory": "Dwarf Forest Spirit",
+    "subcategory": "Forest dwarf-spirit / ancestral revenant",
     "tags": [
-      "forest-protection",
-      "wilderness-danger",
-      "natural-boundaries"
+      "africa",
+      "congo",
+      "rainforest",
+      "dwarf-spirit",
+      "ancestral",
+      "mongo-nkundo",
+      "folklore"
     ],
     "status": "documented",
     "description": {
-      "summary": "The Eloko (plural: Biloko) are dangerous dwarf spirits from the folklore of the Nkundo and Mongo peoples of the Democratic Republic of Congo.",
-      "full": "The Eloko (plural: Biloko) are dangerous dwarf spirits from the folklore of the Nkundo and Mongo peoples of the Democratic Republic of Congo. These malevolent forest entities appear as small humanoid creatures covered in grass or leaves, adorned with bells that produce hypnotic sounds, and possessing long, sharp claws and the ability to swallow victims whole by opening their mouths to extraordinary proportions. The Biloko are said to inhabit the deepest parts of the Congo Basin rainforest, serving as supernatural guardians of the forest who attack hunters, travelers, and anyone who ventures too far into their domain. These spirits embody the very real dangers of the rainforest while reinforcing cultural taboos about respecting nature and the boundaries between human settlements and wild spaces."
+      "summary": "A dangerous dwarf-like forest spirit of the Mongo-Nkundo peoples of the Congo Basin, said to dwell in hollow trees, dressed in leaves with a beard of grass, carrying enchanting bells and possessing claws and a wide-opening mouth. Often understood as the spirit of an ancestor who died in the forest under unjust circumstances.",
+      "full": "Eloko (plural Biloko) is a class of small, malevolent forest spirit in the folklore of the Mongo-Nkundo peoples of central Democratic Republic of the Congo. According to Jan Knappert's 'African Mythology: An Encyclopedia of Myth and Legend' (1995) and standard summaries on Wikipedia, Biloko inhabit hollow trees deep in the rainforest, are clothed in leaves rather than fur, have grass for a beard, and carry small bells whose sound bewitches passers-by. They have piercing eyes, long sharp claws, and snouts capable of opening wide enough to swallow a human. They are said to be the spirits of ancestors who perished in the forest — through accident, murder, or improper burial — and to guard the rare game and fruits of the deep wood. Biloko jealously defend their territories: only the most courageous hunters can enter their domains, and only with strong protective magic, an amulet or a fetish. Biloko prey particularly on women, whom they lure with bell-songs in childlike voices. In Mongo-Nkundo cosmology the figure functions both as a category of dangerous spirit and as a powerful taboo against straying alone into the deep forest."
     },
     "etymology": {
-      "origin": "Congolese (Nkundo, Mongo peoples)",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Mongo-Nkundo (a Bantu language of the Congo Basin); the noun class prefix bi- forms the plural 'biloko' from the singular 'eloko'.",
+      "meaning": "In Mongo-Nkundo usage, eloko refers to a small forest spirit or 'thing of the forest'.",
+      "first_use": "Long pre-colonial oral tradition; documented in 20th-century African ethnographic and folkloric literature (notably Knappert, 1995)."
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "ENTITY_SPIRIT",
-      "type": "Dwarf Forest Spirit",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Forest spirit",
+      "subtype": "Dwarf / ancestral revenant",
+      "variant": "Mongo-Nkundo (Congo Basin)"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "mokele-mbembe", "name": "Mokele-mbembe", "relationship": "related", "description": "Distinct Congo Basin cryptid; both figures are part of the broader spirit-and-creature ecology of the Likouala/Congo rainforest." },
+      { "id": "mmoatia", "name": "Mmoatia (Akan dwarves)", "relationship": "similar", "description": "West African dwarf forest-spirits with comparable functions." },
+      { "id": "duende", "name": "Duende", "relationship": "similar", "description": "Iberian small folkloric spirit; structurally similar in role as a small forest/woodland trickster." },
+      { "id": "menehune", "name": "Menehune", "relationship": "similar", "description": "Hawaiian dwarf forest-people; structural parallel as small forest beings." }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 0.5, "max": 1.2, "unit": "meters", "confidence": "low" },
+      "coloration": ["green (clothing of leaves)", "brown skin", "grass-coloured beard"],
+      "features": [
+        { "feature": "Clothing of leaves", "description": "Biloko wear no woven cloth; their bodies are draped in leaves taken from the forest.", "frequency": "always" },
+        { "feature": "Beard of grass", "description": "Instead of hair, an Eloko's beard is made of growing grass.", "frequency": "always" },
+        { "feature": "Long sharp claws", "description": "Biloko are described with long, sharp claws used to grip prey.", "frequency": "always" },
+        { "feature": "Wide-opening mouth", "description": "Their snouts can open wide enough to swallow a human body whole, alive or dead.", "frequency": "always" },
+        { "feature": "Piercing eyes", "description": "Reported as intensely piercing, capable of fixing a victim's gaze.", "frequency": "common" },
+        { "feature": "Small bell", "description": "Each Eloko carries a small bell, which is the principal instrument of its enchantment.", "frequency": "always" }
+      ],
+      "morphology": "Small, dwarf-like humanoid frame, clothed in leaves, integrated with vegetation; physically far stronger than ordinary humans despite small size."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Bewitching bell", "description": "The Eloko's bell produces a sound that places passers-by under a spell, drawing them deeper into the forest.", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Childlike voice mimicry", "description": "Biloko can call in a small, childlike voice to lure women and the unwary, particularly women left alone while a husband hunts.", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Cannibalistic predation", "description": "Biloko consume human flesh; a swallowed victim disappears whole.", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Guardianship of forest treasures", "description": "Biloko ferociously guard the rare game and fruits of the deep forest.", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Repelled by amulets / fetishes", "description": "Hunters can ward off an Eloko's spell by carrying an appropriate amulet or fetish.", "frequency": "common", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "variable",
+      "disposition": "aggressive",
+      "social_structure": "solitary",
+      "habitat_preference": ["dense Congo Basin rainforest", "hollow trees", "remote primary forest"],
+      "diet": "Carnivorous; preys on humans, particularly women.",
+      "patterns": [
+        "Inhabits hollow trees in deep rainforest",
+        "Guards rare game and fruits jealously",
+        "Lures victims with bell-song and childlike calls",
+        "Targets unaccompanied women and inexperienced hunters",
+        "Avoidable only by heroes, sorcerers, or those carrying strong protective magic"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Congolese (Nkundo, Mongo peoples)",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Confined to the rainforests of the central Congo Basin, particularly the territory of the Mongo-Nkundo peoples of the Democratic Republic of the Congo.",
+      "continents": ["Africa"],
+      "countries": ["Democratic Republic of the Congo"],
+      "regions": ["Congo Basin", "central DRC", "Mongo-Nkundo cultural area"]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Mongo-Nkundo cultural area",
+        "location": {
+          "description": "Central rainforest territories of the Mongo and Nkundo peoples in the Democratic Republic of the Congo",
+          "country": "Democratic Republic of the Congo",
+          "region": "Congo Basin"
+        },
+        "peak_period": "Long-running oral tradition",
+        "notes": "The home of Eloko/Biloko folklore; the figure is documented in Mongo-Nkundo oral and ethnographic literature."
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "Pre-contact",
         "circa": true,
-        "source": "Traditional folklore"
+        "source": "Mongo-Nkundo oral tradition, predating European ethnography"
       }
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Congolese (Nkundo, Mongo peoples)",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Mongo-Nkundo cosmology of the Congo rainforest; Biloko are conceptualized as the spirits of ancestors who died unnaturally in the forest (through accident, murder, or improper burial).",
+      "earliest_accounts": "Long-running pre-colonial oral tradition; encoded in 20th-century ethnographic and folkloric works such as Jan Knappert's 'African Mythology: An Encyclopedia of Myth and Legend' (1995).",
+      "folklore_connections": "Part of a broader Bantu and African pattern of dwarf or 'little people' forest-spirits, including the Aziza of Fon folklore and Mmoatia of Akan tradition."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "Pre-contact", "event": "Mongo-Nkundo oral tradition of Biloko as forest dwarf-spirits and dangerous ancestral revenants", "significance": "Cultural baseline", "source": "Mongo-Nkundo oral tradition" },
+      { "date": "1995", "event": "Jan Knappert's 'African Mythology: An Encyclopedia of Myth and Legend' summarizes Eloko/Biloko traditions in English", "significance": "Standard English-language reference", "source": "Knappert (1995)" }
+    ],
+    "modern_era": "The figure remains an active part of Mongo-Nkundo oral storytelling and a recurrent reference in contemporary African and African-diaspora speculative fiction (e.g. Marlon James, Veronica G. Henry)."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
       "verified": 0,
       "disputed": 0,
-      "debunked": 0
+      "debunked": 0,
+      "date_range": { "earliest": "Pre-contact", "latest": "Contemporary" }
     },
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "eloko-evidence-knappert-1995",
+        "type": "encyclopedia entry",
+        "name": "Knappert, African Mythology",
+        "date": "1995",
+        "description": "Encyclopedia entry summarizing Eloko/Biloko traditions in Mongo-Nkundo folklore.",
+        "status": "verified",
+        "analysis": "Standard secondary reference in English-language sources on Eloko.",
+        "source": "Knappert, J. (1995), African Mythology: An Encyclopedia of Myth and Legend"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Ancestral revenant",
+        "description": "Biloko are the spirits of ancestors who died in the forest under unnatural circumstances (accident, murder, improper burial) and remain bound to the wilderness as restless predatory beings.",
+        "proponents": ["Mongo-Nkundo oral tradition"],
+        "evidence_cited": ["Cultural narratives associating specific Biloko with named lost individuals", "Ritual and burial taboos meant to prevent Biloko-like outcomes"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Ecological taboo encoding",
+        "description": "Biloko function as cultural devices that discourage solitary travel into dangerous parts of the rainforest, encoding real risks (predators, disease, getting lost) as supernatural threat.",
+        "proponents": ["Anthropologists of Central Africa"],
+        "evidence_cited": ["Strong concentration of Biloko activity in genuinely dangerous deep forest", "Functional role of the legend in restraining inexperienced hunters"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Mongo-Nkundo oral tradition of forest spirits and ancestor cults"
+      ],
+      "stories": [
+        "An Eloko bewitches a hunter's wife with bell-song while her husband is away, and ultimately devours her",
+        "Tales of heroes and sorcerers defeating Biloko by means of strong protective magic"
+      ],
+      "beliefs": "Within Mongo-Nkundo tradition, the deep forest is understood as Biloko-territory and is to be entered only with proper ritual precaution."
+    },
+    "indigenous": {
+      "cultures": ["Mongo", "Nkundo"],
+      "significance": "Eloko / Biloko are an integral element of Mongo-Nkundo cosmology, encoding the boundary between human settlement and the deep, dangerous forest, and the dangers of improper death and burial.",
+      "sensitivity_note": "Eloko traditions belong to specific Mongo-Nkundo communities; descriptions should not be conflated with Western 'cryptid' framings, which strip them of their cultural and ethical context.",
+      "respect_guidelines": "Cite Indigenous and African scholars where possible; avoid commodifying Mongo-Nkundo religious beliefs."
     },
     "popular_culture": {
-      "literature": [],
+      "literature": [
+        "African Mythology: An Encyclopedia of Myth and Legend — Jan Knappert (1995)",
+        "Modern speculative fiction featuring Biloko, including works by Marlon James, Veronica G. Henry, and Bethany C. Morrow"
+      ],
       "film_tv": [],
       "games": [],
       "other": []
     }
   },
+
   "research": {
-    "researchers": [],
+    "researchers": [
+      { "name": "Jan Knappert", "affiliation": "African studies / SOAS, University of London", "contribution": "Standard English-language summary of Eloko/Biloko traditions in 'African Mythology' (1995)", "period": "20th century" }
+    ],
     "organizations": [],
-    "ongoing_studies": "None documented"
+    "ongoing_studies": "Active study of Eloko sits within African folklore studies and Bantu ethnography; no cryptozoological research is associated with the figure."
   },
-  "sources": []
+
+  "sources": [
+    {
+      "id": "wikipedia-eloko",
+      "type": "website",
+      "title": "Eloko",
+      "publication": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eloko",
+      "accessed": "2026-05-07"
+    },
+    {
+      "id": "knappert-1995",
+      "type": "book",
+      "title": "African Mythology: An Encyclopedia of Myth and Legend",
+      "authors": ["Jan Knappert"],
+      "publication": "HarperCollins",
+      "date": "1995"
+    }
+  ]
 }
